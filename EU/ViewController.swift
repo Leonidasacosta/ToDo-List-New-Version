@@ -47,7 +47,7 @@ class ViewController: UIViewController {
 }
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
         func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            print("😎 numberOfRowsInSecetion was just called. Returning \(members.count)")
+            print("😎 numberOfRowsInSection was just called. Returning \(members.count)")
             return members.count
         }
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) ->

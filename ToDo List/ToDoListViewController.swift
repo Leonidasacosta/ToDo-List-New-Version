@@ -12,7 +12,6 @@ class ToDoListViewController: UIViewController {
     
     var toDoArray = ["Learn Swift", "Build Apps", "Change the World", "Take a Vacation"]
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         

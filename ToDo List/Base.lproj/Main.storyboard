@@ -63,7 +63,7 @@
             <objects>
                 <tableViewController id="Uw7-DI-Csm" customClass="ToDoDetailTableViewController" customModule="ToDo_List" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="1I3-Wd-mLs">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <sections>
@@ -140,16 +140,21 @@
                                 <action selector="cancelButtonPressed:" destination="Uw7-DI-Csm" id="oHS-Fh-Kq9"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Gap-DH-9ew"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Gap-DH-9ew">
+                            <connections>
+                                <segue destination="j1l-0t-zJc" kind="unwind" unwindAction="unwindFromDetailWithSegue:" id="CaF-Fz-piE"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="datePicker" destination="rS2-QA-TKq" id="Bg1-hC-byk"/>
                         <outlet property="nameField" destination="vhB-TO-CcJ" id="zhI-U9-cLq"/>
                         <outlet property="noteView" destination="ivu-G1-RbB" id="ed0-Wp-mux"/>
-                        <outlet property="saveBarButton" destination="Gap-DH-9ew" id="UfY-87-fN5"/>
+                        <outlet property="saveBarButton" destination="Gap-DH-9ew" id="UEw-t2-bmb"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Wo-b9-dTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="j1l-0t-zJc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3031.875" y="83.450704225352112"/>
         </scene>
@@ -197,7 +202,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="CDq-Zc-FYn"/>
+        <segue reference="twh-c2-Wl7"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
